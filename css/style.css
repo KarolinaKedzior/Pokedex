@@ -1,0 +1,156 @@
+#footer {
+    position: absolute;
+	text-align: right;
+	color: black;
+	font-size: 10pt;
+    bottom: 0;
+    right: 5px;
+    width: 97%;
+}
+
+
+ul.menu {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #de1f1f;
+    border-radius: 2px;
+    border: 2px solid black
+}
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+
+}
+ul.menu li a:hover  {
+    background-color: #ff4e31;
+
+}
+
+.toph{
+font-family:serif sans-serif;
+
+}
+
+h1 {
+    font-size: 32px;
+    padding: 0px 0px 0px 20px;
+}
+
+
+.page {
+        position: relative;
+        background-color: rgba(184, 199, 25, 0.94);
+        width: 80%;
+        margin: auto;
+         height: 1000px;
+         padding: 3px;
+         border-radius: 3px;
+
+}
+
+body {
+
+        font-family: serif;
+        font-size: 14px;
+        background-color:#0e5d0e;
+}
+
+
+.page_content{
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+table {
+    text-align: center;
+    color: white;
+    border : 3px solid black;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-collapse: collapse;
+
+}
+
+table th,td{
+    border: solid 2px black;
+    padding: 0px;
+
+}
+
+table th{
+
+       background-color: #de1f1f;
+}
+
+table td{
+       height: 5px;
+       background-color: #e0c029;
+}
+
+.short {
+    width: 20% ;
+     background-color: rgba(202, 193, 103, 0.66);
+}
+
+.active {
+     background-color: #FF2424;
+}
+
+.Mybutton{
+     display: inline-block;
+
+        margin: 4px;
+        margin-top: 10px;
+        padding: 2px 8px;
+        background-color:
+}
+
+.link{
+     background:none ;
+     border: none;
+     font-weight: bold;
+     text-decoration: underline;
+     color: #1621b7;
+}
+
+.link:hover{
+    color: #5675ce;
+
+}
+
+.rotateImg{
+    transform: rotate(0deg);
+    transition: 2s ;
+}
+
+.rotateImg:hover {
+    transform: rotate(360deg);
+}
+
+.pokemon_stat{
+    width: 70%;
+    margin: auto;
+}
+
+.pokemon_stat td{
+    font-size: 18px;
+    padding: 5px;
+}
+.pokemonName{
+    margin: auto;
+    border-radius : 30px;
+    background-color: rgba(202, 193, 103, 0.49);
+    width: 40%;
+    text-align: center;
+}

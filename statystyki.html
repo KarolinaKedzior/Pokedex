@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projekt</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./scripts/script2.js"></script>
+</head>
+<body>
+<div class="page" id="page">
+<nav style="position: relative" >
+     <h1 class="toph">Pokemon cheatsheet</h1>
+     <ul class="menu">
+        <li><a href="index.html"  >Pokemon List</a></li>
+        <li><a href="statystyki.html" class="active" >Pokemon Statistics</a>  </li>
+     </ul>
+    </nav>
+     <div class="page_content">
+     <div class="pokemonName">
+     <h2 id="pName" class="toph" >Bulbasaur</h2>
+     <img id="pImage" src="http://pokeapi.co/media/img/1.png" alt="No Image" />
+     </div>
+     <table id ="pokemon_stats" class="pokemon_stat" >
+               <tr>
+                  <th > Speed </th>
+                  <th> Attack  </th>
+                  <th> Defense </th>
+               </tr>
+               <tr>
+                  <td id="pSpeed" > </td>
+                  <td id ="pAttack">  </td>
+                  <td id ="pDefense">  </td>
+               </tr>
+        </table>
+        <h3>Evolution forms: </h3>
+        <ul id="evol">
+        </ul>
+        <button type="button" id="prevButton" class="Mybutton" >Previous </button>
+        <button type="button" id="nextButton"  class="Mybutton" >Next </button>
+
+        <p id="ten"></p>
+    </div>
+    <div id = "footer">
+    <p>Copyright © 2017  Karolina Kędzior   </p>
+    </div>
+</div>
+</body>
+</html>

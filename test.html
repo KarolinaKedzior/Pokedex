@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <link rel = "stylesheet" href = "https://code.jquery.com/qunit/qunit-2.3.3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/qunit/qunit-2.3.3.js"> </script>
+
+</head>
+
+<body>
+   <div id = "qunit"></div>
+   <div id = "qunit-fixture"></div>
+      <script>
+
+        function CheckButton(pokemonId, maxId){
+               var buttons ={
+                   pDisabled : false,
+                   nDisabled : false,
+               };
+      if(maxId < 1){
+        buttons.nDisabled =  true;
+        buttons.pDisabled =  true;
+        return buttons;
+      }else{
+          if(pokemonId < 2){
+             buttons.pDisabled =  true;
+          }else if(pokemonId > maxId){
+               buttons.nDisabled =  true;
+          } else{
+                buttons.nDisabled =  false;
+                buttons.pDisabled =  false;
+
+          }
+          return buttons;
+      }
+
+}
+
+         QUnit.test( "Test id = 11", function( assert ) {
+
+          var button = CheckButton(11, 10) ;
+          assert.equal( button.nDisabled, true, "Button 'Next' shouldn't be active" );
+          assert.equal( button.pDisabled, false, "Button 'Previous' should be active" );
+
+         });
+          QUnit.test( "Test id = 0", function( assert ) {
+
+          var button = CheckButton(0, 10) ;
+          assert.equal( button.nDisabled, false, "Button 'Next' should be active" );
+          assert.equal( button.pDisabled, true, "Button 'Previous' shouldn't be active" );
+
+         });
+
+          QUnit.test( "Test id = 0, maxid = -1", function( assert ) {
+
+          var button = CheckButton(0, -1) ;
+          assert.equal( button.nDisabled, true, "'Next' shouldn't be active" );
+          assert.equal( button.pDisabled, true, "'Previous' shouldn't be active" );
+
+         });
+      </script>
+</body>
+
+</html>
